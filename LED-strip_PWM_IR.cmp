@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-11-23 BZR 3812)-testing date = Sun 25 Nov 2012 06:35:41 PM CET
+Cmp-Mod V01 Created by PcbNew date = Sun 25 Nov 2012 10:14:50 PM CET
 
 BeginCmp
 TimeStamp = /4F76EBA8;
@@ -67,7 +67,7 @@ BeginCmp
 TimeStamp = /4F6EEBD3;
 Reference = R2;
 ValeurCmp = 390R;
-IdModule  = -R0805;
+IdModule  = -R0603;
 EndCmp
 
 BeginCmp
