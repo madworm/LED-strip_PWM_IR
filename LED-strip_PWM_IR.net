@@ -1,0 +1,162 @@
+# EESchema Netlist Version 1.1 created  Sun 25 Nov 2012 02:50:01 PM CET
+(
+ ( /4F76EBA8 $noname  C1 100nF {Lib=C}
+  (    1 VCC )
+  (    2 GND )
+ )
+ ( /4F76EB9D $noname  C2 100nF {Lib=C}
+  (    1 /Vin )
+  (    2 GNDPWR )
+ )
+ ( /4F6EEE81 $noname  C3 4.7µF {Lib=CP1}
+  (    1 VCC )
+  (    2 GND )
+ )
+ ( /4F6EEBD3 $noname  R2 390R {Lib=R}
+  (    1 /MOSI )
+  (    2 N-000001 )
+ )
+ ( /4F6ED250 $noname  U1 TSOP38238 {Lib=MADW__TSOP38238}
+  (    1 /MISO )
+  (    2 GND )
+  (    3 VCC )
+ )
+ ( /4F6EC7D6 murata-resonators-CSTLA_T  Q1 8MHz {Lib=CSTLA_T}
+  (    1 /XTAL1 )
+  (    2 GND )
+  (    3 /XTAL2 )
+ )
+ ( /4F6EC6DD $noname  R1 10k {Lib=R}
+  (    1 VCC )
+  (    2 /RESET )
+ )
+ ( /4F6EC6BB $noname  JP1 ISP {Lib=MADW__AVR_ISP}
+  (    1 /MISO )
+  (    2 VCC )
+  (    3 /SCK )
+  (    4 /MOSI )
+  (    5 /RESET )
+  (    6 GND )
+ )
+ ( /4F6EC673 DIP8  IC1 ATtiny85 {Lib=ATTINY85-P}
+  (    1 /RESET )
+  (    2 /XTAL1 )
+  (    3 /XTAL2 )
+  (    4 GND )
+  (    5 /MOSI )
+  (    6 /MISO )
+  (    7 /SCK )
+  (    8 VCC )
+ )
+ ( /50B1E462 $noname  U2 7805MS {Lib=7805MS}
+  (    1 VCC )
+  (    2 GND )
+  (    3 GND )
+  (    6 GNDPWR )
+  (    7 GNDPWR )
+  (    8 /Vin )
+ )
+ ( /50B20791 $noname  T1 IRLR2905_DPAK {Lib=MADW__IRLZ34N}
+  (    1 N-000001 )
+  (    2 /drain )
+  (    3 GNDPWR )
+ )
+ ( /50B20CB2 $noname  P2 CONN_2 {Lib=CONN_2}
+  (    1 /Vin )
+  (    2 /drain )
+ )
+ ( /50B20DF4 $noname  P1 CONN_2 {Lib=CONN_2}
+  (    1 /Vin )
+  (    2 GNDPWR )
+ )
+)
+*
+{ Allowed footprints by component:
+$component C1
+ SM*
+ C?
+ C1-1
+$endlist
+$component C2
+ SM*
+ C?
+ C1-1
+$endlist
+$component C3
+ CP*
+ SM*
+$endlist
+$component R2
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$endfootprintlist
+}
+{ Pin List by Nets
+Net 1 "" ""
+ T1 1
+ R2 2
+Net 2 "/drain" "drain"
+ P2 2
+ T1 2
+Net 3 "GNDPWR" "GNDPWR"
+ U2 6
+ U2 7
+ P1 2
+ T1 3
+ C2 2
+Net 4 "/RESET" "RESET"
+ JP1 5
+ IC1 1
+ R1 2
+Net 5 "/MOSI" "MOSI"
+ R2 1
+ JP1 4
+ IC1 5
+Net 6 "/SCK" "SCK"
+ IC1 7
+ JP1 3
+Net 7 "/Vin" "Vin"
+ P1 1
+ C2 1
+ P2 1
+ U2 8
+Net 8 "GND" "GND"
+ C3 2
+ U1 2
+ Q1 2
+ U2 3
+ IC1 4
+ U2 2
+ JP1 6
+ C1 2
+Net 9 "/MISO" "MISO"
+ JP1 1
+ U1 1
+ IC1 6
+Net 10 "VCC" "VCC"
+ JP1 2
+ IC1 8
+ U2 1
+ R1 1
+ C1 1
+ C3 1
+ U1 3
+Net 11 "/XTAL1" "XTAL1"
+ IC1 2
+ Q1 1
+Net 12 "/XTAL2" "XTAL2"
+ IC1 3
+ Q1 3
+}
+#End

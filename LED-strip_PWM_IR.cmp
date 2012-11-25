@@ -1,0 +1,101 @@
+Cmp-Mod V01 Created by PcbNew date = Sun 25 Nov 2012 01:19:21 PM CET
+
+BeginCmp
+TimeStamp = /4F76EBA8;
+Reference = C1;
+ValeurCmp = 100nF;
+IdModule  = -C0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F76EB9D;
+Reference = C2;
+ValeurCmp = 100nF;
+IdModule  = -C0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F76EC0A;
+Reference = C3;
+ValeurCmp = 100nF;
+IdModule  = -C0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F6EEE81;
+Reference = C4;
+ValeurCmp = 4.7µF;
+IdModule  = -C0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F6EC673;
+Reference = IC1;
+ValeurCmp = ATtiny85;
+IdModule  = -SO08;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F6EC6BB;
+Reference = JP1;
+ValeurCmp = ISP;
+IdModule  = pin_array_3x2;
+EndCmp
+
+BeginCmp
+TimeStamp = /50B20DF4;
+Reference = P1;
+ValeurCmp = CONN_2;
+IdModule  = SIL-2;
+EndCmp
+
+BeginCmp
+TimeStamp = /50B20CB2;
+Reference = P2;
+ValeurCmp = CONN_2;
+IdModule  = SIL-2;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F6EC7D6;
+Reference = Q1;
+ValeurCmp = 8MHz;
+IdModule  = MADW__murata-resonator_CSTCC;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F6EC6DD;
+Reference = R1;
+ValeurCmp = 10k;
+IdModule  = -R0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F6EEBD3;
+Reference = R2;
+ValeurCmp = 100R;
+IdModule  = -R0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /50B20791;
+Reference = T1;
+ValeurCmp = IRLR2905_DPAK;
+IdModule  = -TO252;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F6ED250;
+Reference = U1;
+ValeurCmp = TSOP38238;
+IdModule  = SIL-3;
+EndCmp
+
+BeginCmp
+TimeStamp = /50B1E462;
+Reference = U2;
+ValeurCmp = 7805MS;
+IdModule  = -SO08;
+EndCmp
+
+EndListe
