@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by PcbNew date = Sun 25 Nov 2012 01:19:21 PM CET
+Cmp-Mod V01 Created by CvPcb (2012-11-23 BZR 3812)-testing date = Sun 25 Nov 2012 06:35:41 PM CET
 
 BeginCmp
 TimeStamp = /4F76EBA8;
@@ -15,15 +15,8 @@ IdModule  = -C0805;
 EndCmp
 
 BeginCmp
-TimeStamp = /4F76EC0A;
-Reference = C3;
-ValeurCmp = 100nF;
-IdModule  = -C0805;
-EndCmp
-
-BeginCmp
 TimeStamp = /4F6EEE81;
-Reference = C4;
+Reference = C3;
 ValeurCmp = 4.7µF;
 IdModule  = -C0805;
 EndCmp
@@ -73,7 +66,7 @@ EndCmp
 BeginCmp
 TimeStamp = /4F6EEBD3;
 Reference = R2;
-ValeurCmp = 100R;
+ValeurCmp = 390R;
 IdModule  = -R0805;
 EndCmp
 
@@ -81,7 +74,7 @@ BeginCmp
 TimeStamp = /50B20791;
 Reference = T1;
 ValeurCmp = IRLR2905_DPAK;
-IdModule  = -TO252;
+IdModule  = MADW__TO-252(DPAK);
 EndCmp
 
 BeginCmp
