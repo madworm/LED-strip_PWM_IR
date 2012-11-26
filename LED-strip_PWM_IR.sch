@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sun 25 Nov 2012 02:49:51 PM CET
+EESchema Schematic File Version 2  date Mon 26 Nov 2012 02:29:05 PM CET
 LIBS:my_parts
 LIBS:power
 LIBS:device
@@ -39,7 +39,7 @@ $Descr User 8268 5866
 encoding utf-8
 Sheet 1 1
 Title "LED-strip_PWM_IR"
-Date "25 nov 2012"
+Date "26 nov 2012"
 Rev "0.1"
 Comp "2012 - blog.spitzenpfeil.org"
 Comment1 ""
@@ -156,7 +156,7 @@ L R R2
 U 1 1 4F6EEBD3
 P 5350 3750
 F 0 "R2" V 5350 3850 50  0000 C CNN
-F 1 "390R" V 5350 3700 40  0000 C CNN
+F 1 "150R" V 5350 3700 40  0000 C CNN
 	1    5350 3750
 	0    -1   -1   0   
 $EndComp

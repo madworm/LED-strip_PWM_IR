@@ -1,4 +1,4 @@
-PCBNEW-BOARD Version 2 date Sun 25 Nov 2012 10:32:56 PM CET
+PCBNEW-BOARD Version 2 date Mon 26 Nov 2012 02:29:25 PM CET
 
 # Created by Pcbnew(2012-11-23 BZR 3812)-testing
 
@@ -21,7 +21,7 @@ $EndGENERAL
 $SHEETDESCR
 Sheet User 8268 5866
 Title "LED-strip_PWM_IR"
-Date "25 nov 2012"
+Date "26 nov 2012"
 Rev "0.1"
 Comp "2012 - blog.spitzenpfeil.org"
 Comment1 ""
@@ -1969,7 +1969,7 @@ Op 0 0 0
 .LocalClearance 0.1778
 At SMD
 T0 2.4 0 0.75 0.75 900 0.1875 N V 21 N "R2"
-T1 3.175 1.27 1.1 1.1 0 0.25 N I 21 N "390R"
+T1 3.175 1.27 1.1 1.1 0 0.25 N I 21 N "150R"
 DS 0.4318 0.4318 0.8382 0.4318 0.06604 21
 DS 0.8382 0.4318 0.8382 -0.4318 0.06604 21
 DS 0.4318 -0.4318 0.8382 -0.4318 0.06604 21

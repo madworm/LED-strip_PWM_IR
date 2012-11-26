@@ -1,4 +1,4 @@
-# EESchema Netlist Version 1.1 created  Sun 25 Nov 2012 02:50:01 PM CET
+# EESchema Netlist Version 1.1 created  Mon 26 Nov 2012 02:29:03 PM CET
 (
  ( /4F76EBA8 $noname  C1 100nF {Lib=C}
   (    1 VCC )
@@ -12,7 +12,7 @@
   (    1 VCC )
   (    2 GND )
  )
- ( /4F6EEBD3 $noname  R2 390R {Lib=R}
+ ( /4F6EEBD3 $noname  R2 150R {Lib=R}
   (    1 /MOSI )
   (    2 N-000001 )
  )
