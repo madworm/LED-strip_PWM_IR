@@ -1,4 +1,4 @@
-PCBNEW-BOARD Version 2 date Tue 27 Nov 2012 02:25:28 PM CET
+PCBNEW-BOARD Version 2 date Tue 27 Nov 2012 03:32:19 PM CET
 
 # Created by Pcbnew(2012-11-23 BZR 3812)-testing
 
@@ -57,12 +57,12 @@ TextPcbSize 1.016 1.016
 EdgeModWidth 0.3
 TextModSize 1.1 1.1
 TextModWidth 0.25
-PadSize 7 7
+PadSize 1.2 3.8
 PadDrill 0
 Pad2MaskClearance 0
 SolderMaskMinWidth 0
 AuxiliaryAxisOrg 0 0
-VisibleElements 7FFFFFBF
+VisibleElements 7FFFBFBF
 PcbPlotParams (pcbplotparams (layerselection 284196865) (usegerberextensions true) (excludeedgelayer false) (linewidth 80) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 0) (psnegative false) (psa4output false) (plotreference true) (plotvalue true) (plotothertext true) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk true) (outputformat 1) (mirror false) (drillshape 0) (scaleselection 1) (outputdirectory gerber_files/))
 $EndSETUP
 
@@ -230,41 +230,6 @@ Ne 12 "VCC"
 Po 2.54 0
 $EndPAD
 $EndMODULE SIL-3
-$MODULE MADW__murata-resonator_CSTCC
-Po 79 46.25 2700 15 50B24769 4F77047B ~~
-Li MADW__murata-resonator_CSTCC
-Sc 4F77047B
-AR /4F6EC7D6
-Op 0 0 0
-.LocalClearance 0.25
-T0 -4.65 0.75 1.1 1.1 3600 0.25 N V 21 N "Q1"
-T1 0 -0.25 1.1 1.1 2700 0.25 N I 21 N "8MHz"
-DS -3.6 -1.5 3.6 -1.5 0.381 21
-DS 3.6 -1.5 3.6 1.5 0.381 21
-DS 3.6 1.5 -3.6 1.5 0.381 21
-DS -3.6 1.5 -3.6 -1.5 0.381 21
-$PAD
-Sh "1" R 1.2 3.8 0 0 2700
-Dr 0 0 0
-At SMD N 00888000
-Ne 6 "/XTAL1"
-Po -2.4 0
-$EndPAD
-$PAD
-Sh "2" R 1.2 3.8 0 0 2700
-Dr 0 0 0
-At SMD N 00888000
-Ne 9 "GND"
-Po 0 0
-$EndPAD
-$PAD
-Sh "3" R 1.2 3.8 0 0 2700
-Dr 0 0 0
-At SMD N 00888000
-Ne 7 "/XTAL2"
-Po 2.4 0
-$EndPAD
-$EndMODULE MADW__murata-resonator_CSTCC
 $MODULE pin_array_3x2
 Po 81 37.5 1800 15 50B2476C 4F770478 ~~
 Li pin_array_3x2
@@ -1960,7 +1925,7 @@ Po 0 -2.49936
 $EndPAD
 $EndMODULE MADW__TO-252(DPAK)
 $MODULE -R0603
-Po 93.15 53.6 0 15 50B28E46 50B229F9 ~~
+Po 93.15 53.6 0 15 50B4CEE2 50B229F9 ~~
 Li -R0603
 Cd RESISTOR
 Kw RESISTOR
@@ -2004,6 +1969,40 @@ Ne 11 "N-000001"
 Po 0.84836 0
 $EndPAD
 $EndMODULE -R0603
+$MODULE MADW__murata-resonator_CSTCC
+Po 79 46.25 2700 15 50B4CEA9 4F77047B ~~
+Li MADW__murata-resonator_CSTCC
+Sc 4F77047B
+AR /4F6EC7D6
+Op 0 0 0
+T0 -4.75 0.75 1.1 1.1 3600 0.25 N V 21 N "Q1"
+T1 0.1 -0.05 1.1 1.1 2700 0.25 N I 21 N "8MHz"
+DS -3.6 -1.5 3.6 -1.5 0.381 21
+DS 3.6 -1.5 3.6 1.5 0.381 21
+DS 3.6 1.5 -3.6 1.5 0.381 21
+DS -3.6 1.5 -3.6 -1.5 0.381 21
+$PAD
+Sh "1" R 1.2 3.8 0 0 2700
+Dr 0 0 0
+At SMD N 00888000
+Ne 6 "/XTAL1"
+Po -2.5 0
+$EndPAD
+$PAD
+Sh "2" R 1.4 3.8 0 0 2700
+Dr 0 0 0
+At SMD N 00888000
+Ne 9 "GND"
+Po 0 0
+$EndPAD
+$PAD
+Sh "3" R 1.2 3.8 0 0 2700
+Dr 0 0 0
+At SMD N 00888000
+Ne 7 "/XTAL2"
+Po 2.5 0
+$EndPAD
+$EndMODULE MADW__murata-resonator_CSTCC
 $DRAWSEGMENT
 Po 0 83.4 53.85 84.4 53.85 0.381
 De 20 0 900 0 0
