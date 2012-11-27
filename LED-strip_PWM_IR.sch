@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Mon 26 Nov 2012 02:29:05 PM CET
+EESchema Schematic File Version 2  date Tue 27 Nov 2012 09:08:00 PM CET
 LIBS:my_parts
 LIBS:power
 LIBS:device
@@ -39,8 +39,8 @@ $Descr User 8268 5866
 encoding utf-8
 Sheet 1 1
 Title "LED-strip_PWM_IR"
-Date "26 nov 2012"
-Rev "0.1"
+Date "27 nov 2012"
+Rev "0.11"
 Comp "2012 - blog.spitzenpfeil.org"
 Comment1 ""
 Comment2 ""
@@ -154,10 +154,10 @@ MISO
 $Comp
 L R R2
 U 1 1 4F6EEBD3
-P 5350 3750
-F 0 "R2" V 5350 3850 50  0000 C CNN
-F 1 "150R" V 5350 3700 40  0000 C CNN
-	1    5350 3750
+P 5350 3400
+F 0 "R2" V 5350 3500 50  0000 C CNN
+F 1 "150R" V 5350 3350 43  0000 C CNN
+	1    5350 3400
 	0    -1   -1   0   
 $EndComp
 Text Label 1350 1650 2    60   ~ 0
@@ -341,12 +341,12 @@ L MADW__IRLZ34N T1
 U 1 1 50B20791
 P 5700 3750
 F 0 "T1" H 5900 4040 60  0000 R CNN
-F 1 "IRLR2905_DPAK" H 5900 3650 60  0000 R CNN
+F 1 "IRLR2905_DPAK" H 5950 3550 60  0000 R CNN
 	1    5700 3750
 	1    0    0    -1  
 $EndComp
 Connection ~ 1450 1650
-Text Label 4950 3750 2    60   ~ 0
+Text Label 4950 3400 2    60   ~ 0
 MOSI
 $Comp
 L GNDPWR #PWR012
@@ -371,10 +371,6 @@ Wire Wire Line
 	1350 1550 1600 1550
 Wire Wire Line
 	1350 1650 1600 1650
-Wire Wire Line
-	5600 3750 5700 3750
-Wire Wire Line
-	4950 3750 5100 3750
 $Comp
 L CONN_2 P2
 U 1 1 50B20CB2
@@ -514,4 +510,35 @@ Wire Wire Line
 Connection ~ 3750 3900
 Text Label 6050 3350 0    60   ~ 0
 drain
+Wire Wire Line
+	4950 3400 5100 3400
+Wire Wire Line
+	5600 3400 5650 3400
+Wire Wire Line
+	5650 3400 5650 3750
+Wire Wire Line
+	5600 3750 5700 3750
+$Comp
+L R R3
+U 1 1 50B51D62
+P 5350 3750
+F 0 "R3" V 5350 3850 50  0000 C CNN
+F 1 "20k" V 5350 3700 43  0000 C CNN
+	1    5350 3750
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5650 3750
+Wire Wire Line
+	5100 3750 5050 3750
+Wire Wire Line
+	5050 3750 5050 4000
+$Comp
+L GNDPWR #PWR018
+U 1 1 50B51E71
+P 5050 4000
+F 0 "#PWR018" H 5050 4050 40  0001 C CNN
+F 1 "GNDPWR" H 5050 3920 40  0000 C CNN
+	1    5050 4000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

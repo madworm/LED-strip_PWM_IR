@@ -1,4 +1,4 @@
-# EESchema Netlist Version 1.1 created  Mon 26 Nov 2012 02:29:03 PM CET
+# EESchema Netlist Version 1.1 created  Tue 27 Nov 2012 09:08:09 PM CET
 (
  ( /4F76EBA8 $noname  C1 100nF {Lib=C}
   (    1 VCC )
@@ -14,7 +14,7 @@
  )
  ( /4F6EEBD3 $noname  R2 150R {Lib=R}
   (    1 /MOSI )
-  (    2 N-000001 )
+  (    2 N-000008 )
  )
  ( /4F6ED250 $noname  U1 TSOP38238 {Lib=MADW__TSOP38238}
   (    1 /MISO )
@@ -57,7 +57,7 @@
   (    8 /Vin )
  )
  ( /50B20791 $noname  T1 IRLR2905_DPAK {Lib=MADW__IRLZ34N}
-  (    1 N-000001 )
+  (    1 N-000008 )
   (    2 /drain )
   (    3 GNDPWR )
  )
@@ -68,6 +68,10 @@
  ( /50B20DF4 $noname  P1 CONN_2 {Lib=CONN_2}
   (    1 /Vin )
   (    2 GNDPWR )
+ )
+ ( /50B51D62 $noname  R3 20k {Lib=R}
+  (    1 GNDPWR )
+  (    2 N-000008 )
  )
 )
 *
@@ -100,63 +104,72 @@ $component R1
  R?-*
  SM1206
 $endlist
+$component R3
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
 $endfootprintlist
 }
 { Pin List by Nets
-Net 1 "" ""
- T1 1
- R2 2
-Net 2 "/drain" "drain"
- P2 2
- T1 2
-Net 3 "GNDPWR" "GNDPWR"
- U2 6
- U2 7
+Net 1 "/XTAL1" "XTAL1"
+ Q1 1
+ IC1 2
+Net 2 "/RESET" "RESET"
+ JP1 5
+ R1 2
+ IC1 1
+Net 3 "/MOSI" "MOSI"
+ R2 1
+ IC1 5
+ JP1 4
+Net 4 "GNDPWR" "GNDPWR"
  P1 2
+ R3 1
  T1 3
  C2 2
-Net 4 "/RESET" "RESET"
- JP1 5
- IC1 1
- R1 2
-Net 5 "/MOSI" "MOSI"
- R2 1
- JP1 4
- IC1 5
-Net 6 "/SCK" "SCK"
- IC1 7
+ U2 6
+ U2 7
+Net 5 "/SCK" "SCK"
  JP1 3
+ IC1 7
+Net 6 "/XTAL2" "XTAL2"
+ Q1 3
+ IC1 3
 Net 7 "/Vin" "Vin"
- P1 1
- C2 1
  P2 1
+ C2 1
+ P1 1
  U2 8
-Net 8 "GND" "GND"
- C3 2
+Net 8 "" ""
+ R3 2
+ R2 2
+ T1 1
+Net 9 "GND" "GND"
+ JP1 6
  U1 2
  Q1 2
  U2 3
  IC1 4
  U2 2
- JP1 6
  C1 2
-Net 9 "/MISO" "MISO"
- JP1 1
- U1 1
- IC1 6
-Net 10 "VCC" "VCC"
- JP1 2
+ C3 2
+Net 10 "/drain" "drain"
+ T1 2
+ P2 2
+Net 11 "VCC" "VCC"
  IC1 8
- U2 1
  R1 1
+ U2 1
+ JP1 2
  C1 1
  C3 1
  U1 3
-Net 11 "/XTAL1" "XTAL1"
- IC1 2
- Q1 1
-Net 12 "/XTAL2" "XTAL2"
- IC1 3
- Q1 3
+Net 12 "/MISO" "MISO"
+ IC1 6
+ U1 1
+ JP1 1
 }
 #End
