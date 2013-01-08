@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-11-23 BZR 3812)-testing date = Tue 27 Nov 2012 09:05:04 PM CET
+Cmp-Mod V01 Created by PcbNew date = Tue 08 Jan 2013 03:04:26 PM CET
 
 BeginCmp
 TimeStamp = /4F76EBA8;
@@ -25,7 +25,7 @@ BeginCmp
 TimeStamp = /4F6EC673;
 Reference = IC1;
 ValeurCmp = ATtiny85;
-IdModule  = -SO08;
+IdModule  = MADW__SO8_200mil_wide;
 EndCmp
 
 BeginCmp
