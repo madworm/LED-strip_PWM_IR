@@ -1,4 +1,4 @@
-PCBNEW-BOARD Version 2 date Wed 09 Jan 2013 04:16:05 PM CET
+PCBNEW-BOARD Version 2 date Wed 09 Jan 2013 04:33:38 PM CET
 
 # Created by Pcbnew(2013-01-08 BZR 3894)-testing
 
@@ -7,7 +7,6 @@ encoding utf-8
 Units mm
 LayerCount 2
 EnabledLayers 10F08001
-VisibleLayers 10C08001
 Links 33
 NoConn 0
 Di 75.809499 34.263467 102.0782 58.252948
@@ -62,7 +61,7 @@ PadDrill 0
 Pad2MaskClearance 0
 SolderMaskMinWidth 0
 AuxiliaryAxisOrg 0 0
-VisibleElements 7FFFBFBF
+VisibleElements 7FFFFFBF
 PcbPlotParams (pcbplotparams (layerselection 284196865) (usegerberextensions true) (excludeedgelayer false) (linewidth 80) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 0) (psnegative false) (psa4output false) (plotreference true) (plotvalue true) (plotothertext true) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk true) (outputformat 1) (mirror false) (drillshape 0) (scaleselection 1) (outputdirectory gerber_files/))
 $EndSETUP
 
@@ -142,7 +141,7 @@ AddNet "N-0000010"
 AddNet "VCC"
 $EndNCLASS
 $MODULE LOGO
-Po 97.75 44 0 0 50B20D2E 4F6EF687 ~~
+Po 97.75 45.45 0 0 50B20D2E 4F6EF687 ~~
 Li LOGO
 Sc 4F6EF687
 AR LOGO
@@ -1174,7 +1173,7 @@ Ro 0 0 0
 $EndSHAPE3D
 $EndMODULE pin_array_3x2
 $MODULE 
-Po 78.6 44 0 0 4F6EF696 4F6EF67F ~~
+Po 78.65 45.45 0 0 4F6EF696 4F6EF67F ~~
 Li 
 Sc 4F6EF67F
 AR 
@@ -2098,12 +2097,12 @@ $EndDRAWSEGMENT
 $TEXTPCB
 Te "V0.2"
 nl "IR PWM controller"
-Po 88.15 42.4 1.016 1.016 0.2032 0
+Po 88.15 44.2 1.016 1.016 0.2032 0
 De 20 0 0 Normal
 $EndTEXTPCB
 $TEXTPCB
 Te "2013 - blog.spitzenpfeil.org"
-Po 88.15 47.5 1.016 1.016 0.2032 0
+Po 88.1 48.05 1.016 1.016 0.2032 0
 De 20 0 0 Normal
 $EndTEXTPCB
 $TEXTPCB
