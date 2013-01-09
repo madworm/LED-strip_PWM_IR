@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-01-08 BZR 3894)-testing date = Wed 09 Jan 2013 04:06:38 PM CET
+Cmp-Mod V01 Created by CvPcb (2013-01-08 BZR 3894)-testing date = Wed 09 Jan 2013 06:34:16 PM CET
 
 BeginCmp
 TimeStamp = /4F76EBA8;
@@ -19,6 +19,13 @@ TimeStamp = /4F6EEE81;
 Reference = C3;
 ValeurCmp = 4.7µF;
 IdModule  = -C0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /50EDA6CA;
+Reference = D1;
+ValeurCmp = LED;
+IdModule  = -CHIPLED_0603;
 EndCmp
 
 BeginCmp
@@ -81,6 +88,13 @@ BeginCmp
 TimeStamp = /50B51D62;
 Reference = R3;
 ValeurCmp = 20k;
+IdModule  = -R0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /50EDA6E8;
+Reference = R4;
+ValeurCmp = 1k;
 IdModule  = -R0603;
 EndCmp
 
