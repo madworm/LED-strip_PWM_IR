@@ -1,175 +1,273 @@
-# EESchema Netlist Version 1.1 created  Tue 27 Nov 2012 09:08:09 PM CET
-(
- ( /4F76EBA8 $noname  C1 100nF {Lib=C}
-  (    1 VCC )
-  (    2 GND )
- )
- ( /4F76EB9D $noname  C2 100nF {Lib=C}
-  (    1 /Vin )
-  (    2 GNDPWR )
- )
- ( /4F6EEE81 $noname  C3 4.7µF {Lib=CP1}
-  (    1 VCC )
-  (    2 GND )
- )
- ( /4F6EEBD3 $noname  R2 150R {Lib=R}
-  (    1 /MOSI )
-  (    2 N-000008 )
- )
- ( /4F6ED250 $noname  U1 TSOP38238 {Lib=MADW__TSOP38238}
-  (    1 /MISO )
-  (    2 GND )
-  (    3 VCC )
- )
- ( /4F6EC7D6 murata-resonators-CSTLA_T  Q1 8MHz {Lib=CSTLA_T}
-  (    1 /XTAL1 )
-  (    2 GND )
-  (    3 /XTAL2 )
- )
- ( /4F6EC6DD $noname  R1 10k {Lib=R}
-  (    1 VCC )
-  (    2 /RESET )
- )
- ( /4F6EC6BB $noname  JP1 ISP {Lib=MADW__AVR_ISP}
-  (    1 /MISO )
-  (    2 VCC )
-  (    3 /SCK )
-  (    4 /MOSI )
-  (    5 /RESET )
-  (    6 GND )
- )
- ( /4F6EC673 DIP8  IC1 ATtiny85 {Lib=ATTINY85-P}
-  (    1 /RESET )
-  (    2 /XTAL1 )
-  (    3 /XTAL2 )
-  (    4 GND )
-  (    5 /MOSI )
-  (    6 /MISO )
-  (    7 /SCK )
-  (    8 VCC )
- )
- ( /50B1E462 $noname  U2 7805MS {Lib=7805MS}
-  (    1 VCC )
-  (    2 GND )
-  (    3 GND )
-  (    6 GNDPWR )
-  (    7 GNDPWR )
-  (    8 /Vin )
- )
- ( /50B20791 $noname  T1 IRLR2905_DPAK {Lib=MADW__IRLZ34N}
-  (    1 N-000008 )
-  (    2 /drain )
-  (    3 GNDPWR )
- )
- ( /50B20CB2 $noname  P2 CONN_2 {Lib=CONN_2}
-  (    1 /Vin )
-  (    2 /drain )
- )
- ( /50B20DF4 $noname  P1 CONN_2 {Lib=CONN_2}
-  (    1 /Vin )
-  (    2 GNDPWR )
- )
- ( /50B51D62 $noname  R3 20k {Lib=R}
-  (    1 GNDPWR )
-  (    2 N-000008 )
- )
-)
-*
-{ Allowed footprints by component:
-$component C1
- SM*
- C?
- C1-1
-$endlist
-$component C2
- SM*
- C?
- C1-1
-$endlist
-$component C3
- CP*
- SM*
-$endlist
-$component R2
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component R1
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component R3
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$endfootprintlist
-}
-{ Pin List by Nets
-Net 1 "/XTAL1" "XTAL1"
- Q1 1
- IC1 2
-Net 2 "/RESET" "RESET"
- JP1 5
- R1 2
- IC1 1
-Net 3 "/MOSI" "MOSI"
- R2 1
- IC1 5
- JP1 4
-Net 4 "GNDPWR" "GNDPWR"
- P1 2
- R3 1
- T1 3
- C2 2
- U2 6
- U2 7
-Net 5 "/SCK" "SCK"
- JP1 3
- IC1 7
-Net 6 "/XTAL2" "XTAL2"
- Q1 3
- IC1 3
-Net 7 "/Vin" "Vin"
- P2 1
- C2 1
- P1 1
- U2 8
-Net 8 "" ""
- R3 2
- R2 2
- T1 1
-Net 9 "GND" "GND"
- JP1 6
- U1 2
- Q1 2
- U2 3
- IC1 4
- U2 2
- C1 2
- C3 2
-Net 10 "/drain" "drain"
- T1 2
- P2 2
-Net 11 "VCC" "VCC"
- IC1 8
- R1 1
- U2 1
- JP1 2
- C1 1
- C3 1
- U1 3
-Net 12 "/MISO" "MISO"
- IC1 6
- U1 1
- JP1 1
-}
-#End
+(export (version D)
+  (design
+    (source /home/robert/Electronics/Arduino/KiCAD/Projects/LED-strip_PWM_IR/LED-strip_PWM_IR.sch)
+    (date "Wed 09 Jan 2013 04:06:19 PM CET")
+    (tool "eeschema (2013-01-08 BZR 3894)-testing"))
+  (components
+    (comp (ref C1)
+      (value 100nF)
+      (libsource (lib device) (part C))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 4F76EBA8))
+    (comp (ref C2)
+      (value 100nF)
+      (libsource (lib device) (part C))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 4F76EB9D))
+    (comp (ref C3)
+      (value 4.7µF)
+      (libsource (lib my_parts) (part CP1))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 4F6EEE81))
+    (comp (ref R2)
+      (value 150R)
+      (libsource (lib device) (part R))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 4F6EEBD3))
+    (comp (ref U1)
+      (value TSOP38238)
+      (libsource (lib my_parts) (part MADW__TSOP38238))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 4F6ED250))
+    (comp (ref Q1)
+      (value 8MHz)
+      (footprint murata-resonators-CSTLA_T)
+      (libsource (lib murata-resonators) (part CSTLA_T))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 4F6EC7D6))
+    (comp (ref R1)
+      (value 10k)
+      (libsource (lib device) (part R))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 4F6EC6DD))
+    (comp (ref JP1)
+      (value ISP)
+      (libsource (lib my_parts) (part MADW__AVR_ISP))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 4F6EC6BB))
+    (comp (ref IC1)
+      (value ATtiny85)
+      (footprint DIP8)
+      (libsource (lib atmel) (part ATTINY85-P))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 4F6EC673))
+    (comp (ref T1)
+      (value IRLR2905_DPAK)
+      (libsource (lib my_parts) (part MADW__IRLZ34N))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 50B20791))
+    (comp (ref P2)
+      (value CONN_2)
+      (libsource (lib conn) (part CONN_2))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 50B20CB2))
+    (comp (ref P1)
+      (value CONN_2)
+      (libsource (lib conn) (part CONN_2))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 50B20DF4))
+    (comp (ref R3)
+      (value 20k)
+      (libsource (lib device) (part R))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 50B51D62))
+    (comp (ref U2)
+      (value MCP1804-SOT23-5)
+      (libsource (lib my_parts) (part MADW__MCP1804-SOT23-5))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 50ED7AA4))
+    (comp (ref NJ1)
+      (value NET-JOIN)
+      (libsource (lib device) (part JUMPER))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 50ED7F02)))
+  (libparts
+    (libpart (lib my_parts) (part CP1)
+      (description "Condensateur polarise")
+      (footprints
+        (fp CP*)
+        (fp SM*))
+      (fields
+        (field (name Reference) C)
+        (field (name Value) CP1))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive))))
+    (libpart (lib my_parts) (part MADW__AVR_ISP)
+      (fields
+        (field (name Reference) JP)
+        (field (name Value) MADW__AVR_ISP))
+      (pins
+        (pin (num 1) (name MISO) (type passive))
+        (pin (num 2) (name VTG) (type passive))
+        (pin (num 3) (name SCK) (type passive))
+        (pin (num 4) (name MOSI) (type passive))
+        (pin (num 5) (name RST) (type passive))
+        (pin (num 6) (name GND) (type passive))))
+    (libpart (lib my_parts) (part MADW__IRLZ34N)
+      (docs transistors/mos/*.*)
+      (fields
+        (field (name Reference) Q)
+        (field (name Value) MADW__IRLZ34N))
+      (pins
+        (pin (num 1) (name G) (type input))
+        (pin (num 2) (name D) (type passive))
+        (pin (num 3) (name S) (type passive))))
+    (libpart (lib my_parts) (part MADW__MCP1804-SOT23-5)
+      (description "Low-drop voltage regulator with shutdown")
+      (footprints
+        (fp SOT23-5))
+      (fields
+        (field (name Reference) U)
+        (field (name Value) MADW__MCP1804-SOT23-5))
+      (pins
+        (pin (num 1) (name Vin) (type power_in))
+        (pin (num 2) (name GND) (type passive))
+        (pin (num 3) (name NC) (type NotConnected))
+        (pin (num 4) (name SHDN) (type input))
+        (pin (num 5) (name OUT) (type power_out))))
+    (libpart (lib my_parts) (part MADW__TSOP38238)
+      (fields
+        (field (name Reference) U)
+        (field (name Value) MADW__TSOP38238))
+      (pins
+        (pin (num 1) (name ~) (type openCol))
+        (pin (num 2) (name ~) (type passive))
+        (pin (num 3) (name ~) (type passive))))
+    (libpart (lib device) (part C)
+      (description "Condensateur non polarise")
+      (footprints
+        (fp SM*)
+        (fp C?)
+        (fp C1-1))
+      (fields
+        (field (name Reference) C)
+        (field (name Value) C))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive))))
+    (libpart (lib device) (part JUMPER)
+      (fields
+        (field (name Reference) JP)
+        (field (name Value) JUMPER))
+      (pins
+        (pin (num 1) (name 1) (type passive))
+        (pin (num 2) (name 2) (type passive))))
+    (libpart (lib device) (part R)
+      (description Resistance)
+      (footprints
+        (fp R?)
+        (fp SM0603)
+        (fp SM0805)
+        (fp R?-*)
+        (fp SM1206))
+      (fields
+        (field (name Reference) R)
+        (field (name Value) R))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive))))
+    (libpart (lib conn) (part CONN_2)
+      (description "Symbole general de connecteur")
+      (fields
+        (field (name Reference) P)
+        (field (name Value) CONN_2))
+      (pins
+        (pin (num 1) (name P1) (type passive))
+        (pin (num 2) (name PM) (type passive))))
+    (libpart (lib atmel) (part ATTINY85-P)
+      (description "ATTINY45, PDIP8, 8k Flash, 512B SRAM, 512B EEPROM, Debug Wire")
+      (docs http://www.atmel.com/dyn/resources/prod_documents/doc2586.pdf)
+      (fields
+        (field (name Reference) IC)
+        (field (name Value) ATTINY85-P)
+        (field (name Footprint) DIP8))
+      (pins
+        (pin (num 1) (name "PB5(~RESET~/dW/ADC0/PCINT5)") (type BiDi))
+        (pin (num 2) (name "PB3(XTAL1/CLKI/OC1B/ADC3/PCINT3)") (type BiDi))
+        (pin (num 3) (name "PB4(XTAL2/CLKO/OC1B/ADC2/PCINT4)") (type BiDi))
+        (pin (num 4) (name GND) (type power_in))
+        (pin (num 5) (name "PB0(MOSI/DI/SDA/AIN0/OC0A/OC1A/AREF/PCINT0)") (type BiDi))
+        (pin (num 6) (name "PB1(MISO/DO/AIN1/OC0B/OC1A/PCINT1)") (type BiDi))
+        (pin (num 7) (name "PB2(SCK/USCK/SCL/T0/INT0/ADC1/PCINT2)") (type BiDi))
+        (pin (num 8) (name VCC) (type power_in))))
+    (libpart (lib murata-resonators) (part CSTLA_T)
+      (fields
+        (field (name Reference) Q)
+        (field (name Value) CSTLA_T)
+        (field (name Footprint) murata-resonators-CSTLA_T))
+      (pins
+        (pin (num 1) (name 1) (type output))
+        (pin (num 2) (name VSS) (type power_in))
+        (pin (num 3) (name 3) (type input)))))
+  (libraries
+    (library (logical my_parts)
+      (uri /home/robert/Arduino/KiCAD/LIBS/my_parts.lib))
+    (library (logical device)
+      (uri /usr/share/kicad/library/device.lib))
+    (library (logical conn)
+      (uri /usr/share/kicad/library/conn.lib))
+    (library (logical atmel)
+      (uri /usr/share/kicad/library/atmel.lib))
+    (library (logical murata-resonators)
+      (uri /usr/share/kicad/library/murata-resonators.lib)))
+  (nets
+    (net (code 1) (name /Vin)
+      (node (ref U2) (pin 4))
+      (node (ref C2) (pin 1))
+      (node (ref P2) (pin 1))
+      (node (ref U2) (pin 1))
+      (node (ref P1) (pin 1)))
+    (net (code 2) (name GNDPWR)
+      (node (ref R3) (pin 1))
+      (node (ref U2) (pin 2))
+      (node (ref NJ1) (pin 2))
+      (node (ref P1) (pin 2))
+      (node (ref T1) (pin 3))
+      (node (ref C2) (pin 2)))
+    (net (code 3) (name /SCK)
+      (node (ref IC1) (pin 7))
+      (node (ref JP1) (pin 3)))
+    (net (code 4) (name /RESET)
+      (node (ref JP1) (pin 5))
+      (node (ref IC1) (pin 1))
+      (node (ref R1) (pin 2)))
+    (net (code 5) (name /MOSI)
+      (node (ref JP1) (pin 4))
+      (node (ref IC1) (pin 5))
+      (node (ref R2) (pin 1)))
+    (net (code 6) (name /XTAL1)
+      (node (ref IC1) (pin 2))
+      (node (ref Q1) (pin 1)))
+    (net (code 7) (name /XTAL2)
+      (node (ref Q1) (pin 3))
+      (node (ref IC1) (pin 3)))
+    (net (code 8) (name GND)
+      (node (ref U1) (pin 2))
+      (node (ref Q1) (pin 2))
+      (node (ref JP1) (pin 6))
+      (node (ref IC1) (pin 4))
+      (node (ref C1) (pin 2))
+      (node (ref NJ1) (pin 1))
+      (node (ref C3) (pin 2)))
+    (net (code 9) (name /drain)
+      (node (ref T1) (pin 2))
+      (node (ref P2) (pin 2)))
+    (net (code 10) (name "")
+      (node (ref R2) (pin 2))
+      (node (ref R3) (pin 2))
+      (node (ref T1) (pin 1)))
+    (net (code 11) (name "")
+      (node (ref U2) (pin 3)))
+    (net (code 12) (name VCC)
+      (node (ref C3) (pin 1))
+      (node (ref IC1) (pin 8))
+      (node (ref U2) (pin 5))
+      (node (ref JP1) (pin 2))
+      (node (ref U1) (pin 3))
+      (node (ref R1) (pin 1))
+      (node (ref C1) (pin 1)))
+    (net (code 13) (name /MISO)
+      (node (ref JP1) (pin 1))
+      (node (ref IC1) (pin 6))
+      (node (ref U1) (pin 1)))))

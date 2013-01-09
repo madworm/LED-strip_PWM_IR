@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by PcbNew date = Tue 08 Jan 2013 03:04:26 PM CET
+Cmp-Mod V01 Created by CvPcb (2013-01-08 BZR 3894)-testing date = Wed 09 Jan 2013 04:06:38 PM CET
 
 BeginCmp
 TimeStamp = /4F76EBA8;
@@ -33,6 +33,13 @@ TimeStamp = /4F6EC6BB;
 Reference = JP1;
 ValeurCmp = ISP;
 IdModule  = pin_array_3x2;
+EndCmp
+
+BeginCmp
+TimeStamp = /50ED7F02;
+Reference = NJ1;
+ValeurCmp = NET-JOIN;
+IdModule  = MADW__SMD-solder-bridge-narrow;
 EndCmp
 
 BeginCmp
@@ -92,10 +99,10 @@ IdModule  = SIL-3;
 EndCmp
 
 BeginCmp
-TimeStamp = /50B1E462;
+TimeStamp = /50ED7AA4;
 Reference = U2;
-ValeurCmp = 7805MS;
-IdModule  = -SO08;
+ValeurCmp = MCP1804-SOT23-5;
+IdModule  = SOT23-5;
 EndCmp
 
 EndListe
