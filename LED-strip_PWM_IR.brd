@@ -1,16 +1,16 @@
-PCBNEW-BOARD Version 2 date Wed 16 Jan 2013 01:17:31 PM CET
+PCBNEW-BOARD Version 2 date Sun 20 Jan 2013 07:02:39 AM CET
 
-# Created by Pcbnew(2013-01-15 BZR 3905)-testing
+# Created by Pcbnew(2013-01-19 BZR 3914)-testing
 
 $GENERAL
 encoding utf-8
 Units mm
 LayerCount 2
-EnabledLayers 10F08001
+EnabledLayers 12F08001
 Links 36
 NoConn 0
-Di 75.809499 34.809499 102.0782 58.252948
-Ndraw 38
+Di 75.809499 32.069601 107.418667 58.252948
+Ndraw 40
 Ntrack 214
 Nzone 0
 BoardThickness 1.6002
@@ -19,9 +19,9 @@ Nnets 14
 $EndGENERAL
 
 $SHEETDESCR
-Sheet User 17000 11000
+Sheet User 8268 5866
 Title "LED-strip_PWM_IR"
-Date "16 jan 2013"
+Date "20 jan 2013"
 Rev "0.21"
 Comp "2012 - blog.spitzenpfeil.org"
 Comment1 ""
@@ -62,7 +62,7 @@ Pad2MaskClearance 0
 SolderMaskMinWidth 0
 AuxiliaryAxisOrg 0 0
 VisibleElements 7FFFFFBF
-PcbPlotParams (pcbplotparams (layerselection 284196865) (usegerberextensions true) (excludeedgelayer false) (linewidth 80) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 0) (psnegative false) (psa4output false) (plotreference true) (plotvalue true) (plotothertext true) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk true) (outputformat 1) (mirror false) (drillshape 0) (scaleselection 1) (outputdirectory gerber_files/))
+PcbPlotParams (pcbplotparams (layerselection 317751297) (usegerberextensions true) (excludeedgelayer false) (linewidth 80) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 0) (psnegative false) (psa4output false) (plotreference true) (plotvalue true) (plotothertext true) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk true) (outputformat 1) (mirror false) (drillshape 0) (scaleselection 1) (outputdirectory gerber_files/))
 $EndSETUP
 
 $EQUIPOT
@@ -2143,6 +2143,32 @@ Ne 4 "/SCK"
 Po 0.84836 0
 $EndPAD
 $EndMODULE -R0603
+$COTATION
+Ge 0 25 0
+Va 23
+Te "23.000 mm"
+Po 102.914399 46.5 1.016 1.016 0.2032 2700 1
+Sb 0 101.999999 35 101.999999 58 0.2032
+Sd 0 101 58 103.828799 58 0.2032
+Sg 0 101 35 103.828799 35 0.2032
+S1 0 101.999999 58 101.413579 56.873497 0.2032
+S2 0 101.999999 58 102.586419 56.873497 0.2032
+S3 0 101.999999 35 101.413579 36.126503 0.2032
+S4 0 101.999999 35 102.586419 36.126503 0.2032
+$endCOTATION
+$COTATION
+Ge 0 25 0
+Va 25
+Te "25.000 mm"
+Po 88.5 33.085601 1.016 1.016 0.2032 -0 1
+Sb 0 76 34.000001 101 34.000001 0.2032
+Sd 0 101 35 101 32.171201 0.2032
+Sg 0 76 35 76 32.171201 0.2032
+S1 0 101 34.000001 99.873497 34.586421 0.2032
+S2 0 101 34.000001 99.873497 33.413581 0.2032
+S3 0 76 34.000001 77.126503 34.586421 0.2032
+S4 0 76 34.000001 77.126503 33.413581 0.2032
+$endCOTATION
 $TEXTPCB
 Te "MODE"
 Po 87.1 37.6 1 1 0.2 0
