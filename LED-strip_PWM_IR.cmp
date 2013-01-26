@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-01-08 BZR 3894)-testing date = Wed 09 Jan 2013 06:34:16 PM CET
+Cmp-Mod V01 Created by PcbNew date = Sat 26 Jan 2013 03:54:40 PM CET
 
 BeginCmp
 TimeStamp = /4F76EBA8;
@@ -46,7 +46,7 @@ BeginCmp
 TimeStamp = /50ED7F02;
 Reference = NJ1;
 ValeurCmp = NET-JOIN;
-IdModule  = MADW__SMD-solder-bridge-narrow;
+IdModule  = MADW__SMD-net-noin-0.5mm;
 EndCmp
 
 BeginCmp
