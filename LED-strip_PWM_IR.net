@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/robert/Electronics/Arduino/KiCAD/Projects/LED-strip_PWM_IR/LED-strip_PWM_IR.sch)
-    (date "Sun 27 Jan 2013 10:33:15 AM CET")
+    (date "Sun 27 Jan 2013 11:09:58 AM CET")
     (tool "eeschema (2013-01-24 BZR 3921)-testing"))
   (components
     (comp (ref C1)
@@ -199,6 +199,15 @@
       (pins
         (pin (num 1) (name P1) (type passive))
         (pin (num 2) (name PM) (type passive))))
+    (libpart (lib murata-resonators) (part CSTLA_T)
+      (fields
+        (field (name Reference) Q)
+        (field (name Value) CSTLA_T)
+        (field (name Footprint) murata-resonators-CSTLA_T))
+      (pins
+        (pin (num 1) (name 1) (type output))
+        (pin (num 2) (name VSS) (type power_in))
+        (pin (num 3) (name 3) (type input))))
     (libpart (lib atmel) (part ATTINY25-S)
       (description "ATTINY25, SO8 Wide, 2k Flash, 128B SRAM, 128B EEPROM, Debug Wire")
       (docs http://www.atmel.com/dyn/resources/prod_documents/doc2586.pdf)
@@ -214,27 +223,18 @@
         (pin (num 5) (name "PB0(MOSI/DI/SDA/AIN0/OC0A/OC1A/AREF/PCINT0)") (type BiDi))
         (pin (num 6) (name "PB1(MISO/DO/AIN1/OC0B/OC1A/PCINT1)") (type BiDi))
         (pin (num 7) (name "PB2(SCK/USCK/SCL/T0/INT0/ADC1/PCINT2)") (type BiDi))
-        (pin (num 8) (name VCC) (type power_in))))
-    (libpart (lib murata-resonators) (part CSTLA_T)
-      (fields
-        (field (name Reference) Q)
-        (field (name Value) CSTLA_T)
-        (field (name Footprint) murata-resonators-CSTLA_T))
-      (pins
-        (pin (num 1) (name 1) (type output))
-        (pin (num 2) (name VSS) (type power_in))
-        (pin (num 3) (name 3) (type input)))))
+        (pin (num 8) (name VCC) (type power_in)))))
   (libraries
-    (library (logical device)
-      (uri /usr/share/kicad/library/device.lib))
     (library (logical my_parts)
       (uri /home/robert/Arduino/KiCAD/LIBS/my_parts.lib))
+    (library (logical device)
+      (uri /usr/share/kicad/library/device.lib))
     (library (logical conn)
       (uri /usr/share/kicad/library/conn.lib))
-    (library (logical atmel)
-      (uri /usr/share/kicad/library/atmel.lib))
     (library (logical murata-resonators)
-      (uri /usr/share/kicad/library/murata-resonators.lib)))
+      (uri /usr/share/kicad/library/murata-resonators.lib))
+    (library (logical atmel)
+      (uri /usr/share/kicad/library/atmel.lib)))
   (nets
     (net (code 1) (name "")
       (node (ref R3) (pin 2))
