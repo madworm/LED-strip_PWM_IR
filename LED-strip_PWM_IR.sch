@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Thu 10 Jan 2013 12:08:27 AM CET
+EESchema Schematic File Version 2  date Sun 27 Jan 2013 10:33:05 AM CET
 LIBS:my_parts
 LIBS:power
 LIBS:device
@@ -30,7 +30,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:atmel_rev110
 LIBS:murata-resonators
 LIBS:LED-strip_PWM_IR-cache
 EELAYER 27 0
@@ -39,7 +38,7 @@ $Descr User 8268 5906
 encoding utf-8
 Sheet 1 1
 Title "LED-strip_PWM_IR"
-Date "9 jan 2013"
+Date "27 jan 2013"
 Rev "0.2"
 Comp "2012 - blog.spitzenpfeil.org"
 Comment1 ""
@@ -278,16 +277,6 @@ P 3250 2500
 F 0 "JP1" H 3200 2700 50  0000 L BNN
 F 1 "ISP" H 3200 2200 50  0000 L BNN
 	1    3250 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L ATTINY85-P IC1
-U 1 1 4F6EC673
-P 1800 1050
-F 0 "IC1" H 1900 1100 60  0000 C CNN
-F 1 "ATtiny85" H 3800 1100 60  0000 C CNN
-F 2 "DIP8" H 1900 300 60  0001 C CNN
-	1    1800 1050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -589,4 +578,14 @@ Connection ~ 1950 4000
 Wire Wire Line
 	2950 4000 2950 4050
 Connection ~ 2950 4000
+$Comp
+L ATTINY85-S IC1
+U 1 1 5104F51F
+P 2950 1400
+F 0 "IC1" H 1900 1800 60  0000 C CNN
+F 1 "ATTINY85-S" H 3800 1000 60  0000 C CNN
+F 2 "SO8-200" H 2050 1000 60  0000 C CNN
+	1    2950 1400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

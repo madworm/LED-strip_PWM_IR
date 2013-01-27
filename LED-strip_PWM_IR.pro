@@ -1,4 +1,4 @@
-update=Sun 25 Nov 2012 10:30:35 AM CET
+update=Sun 27 Jan 2013 10:32:10 AM CET
 version=1
 last_client=eeschema
 [general]
@@ -80,5 +80,4 @@ LibName28=opto
 LibName29=atmel
 LibName30=contrib
 LibName31=valves
-LibName32=atmel_rev110
-LibName33=murata-resonators
+LibName32=murata-resonators

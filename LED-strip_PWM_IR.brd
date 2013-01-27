@@ -1,6 +1,6 @@
-PCBNEW-BOARD Version 2 date Sat 26 Jan 2013 03:59:23 PM CET
+PCBNEW-BOARD Version 2 date Sun 27 Jan 2013 10:34:03 AM CET
 
-# Created by Pcbnew(2013-01-25 BZR 3922)-testing
+# Created by Pcbnew(2013-01-24 BZR 3921)-testing
 
 $GENERAL
 encoding utf-8
@@ -21,7 +21,7 @@ $EndGENERAL
 $SHEETDESCR
 Sheet User 8268 5866
 Title "LED-strip_PWM_IR"
-Date "26 jan 2013"
+Date "27 jan 2013"
 Rev "0.21"
 Comp "2012 - blog.spitzenpfeil.org"
 Comment1 ""
@@ -110,11 +110,11 @@ Na 10 "GNDPWR"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 11 "N-000003"
+Na 11 "N-000001"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 12 "N-000009"
+Na 12 "N-000006"
 St ~
 $EndEQUIPOT
 $EQUIPOT
@@ -138,8 +138,8 @@ AddNet "/SCK"
 AddNet "/XTAL1"
 AddNet "/XTAL2"
 AddNet "/drain"
-AddNet "N-000003"
-AddNet "N-000009"
+AddNet "N-000001"
+AddNet "N-000006"
 $EndNCLASS
 $NCLASS
 Name "Power"
@@ -333,7 +333,7 @@ $PAD
 Sh "1" R 0.79756 0.79756 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 12 "N-000009"
+Ne 12 "N-000006"
 Po 0 0.7493
 $EndPAD
 $PAD
@@ -1782,7 +1782,7 @@ $PAD
 Sh "1" R 1.5 2.5 0 0 900
 Dr 0 0 0
 At SMD N 00888000
-Ne 11 "N-000003"
+Ne 11 "N-000001"
 Po -2.3 4.4
 $EndPAD
 $PAD
@@ -1841,7 +1841,7 @@ $PAD
 Sh "2" R 0.99822 1.09982 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 11 "N-000003"
+Ne 11 "N-000001"
 Po 0.84836 0
 $EndPAD
 $EndMODULE -R0603
@@ -1919,7 +1919,7 @@ $PAD
 Sh "2" R 0.99822 1.09982 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 11 "N-000003"
+Ne 11 "N-000001"
 Po 0.84836 0
 $EndPAD
 $EndMODULE -R0603
@@ -1927,10 +1927,10 @@ $MODULE MADW__SO8_200mil_wide
 Po 86.85 45.65 2700 15 50EC288C 51089E96 ~~
 Li MADW__SO8_200mil_wide
 Sc 51089E96
-AR /4F6EC673
+AR /5104F51F
 Op 0 0 0
 T0 -0.1 -0.1 1.1 1.1 2700 0.25 N V 21 N "IC1"
-T1 0 7 1.1 1.1 2700 0.25 N I 21 N "ATtiny85"
+T1 0 7 1.1 1.1 2700 0.25 N I 21 N "ATTINY85-S"
 DS -3 -5.5 3 -5.5 0.25 21
 DS 3 -5.5 3 5.5 0.25 21
 DS 3 5.5 -3 5.5 0.25 21
@@ -2109,7 +2109,7 @@ $PAD
 Sh "1" R 0.99822 1.09982 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 12 "N-000009"
+Ne 12 "N-000006"
 Po -0.84836 0
 $EndPAD
 $PAD
