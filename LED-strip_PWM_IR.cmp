@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by PcbNew date = Sat 09 Feb 2013 08:29:05 PM CET
+Cmp-Mod V01 Created by PcbNew date = Tue 12 Feb 2013 08:14:35 PM CET
 
 BeginCmp
 TimeStamp = /4F76EBA8;
@@ -67,7 +67,7 @@ BeginCmp
 TimeStamp = /4F6EC7D6;
 Reference = Q1;
 ValeurCmp = 8MHz;
-IdModule  = MADW__murata-resonator_CSTCC;
+IdModule  = MADW__murata-resonator_CSTCE-G;
 EndCmp
 
 BeginCmp
