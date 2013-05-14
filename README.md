@@ -1,6 +1,6 @@
 
-LED_port-status
-===============
+LED-strip_PWM_IR
+================
 
 LAYOUT FILES: Small high-current PWM controller with IR receiver (ATtiny85 based). 
 
