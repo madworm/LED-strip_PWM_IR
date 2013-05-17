@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by PcbNew date = Tue 12 Feb 2013 08:14:35 PM CET
+Cmp-Mod V01 Created by CvPcb (2013-05-16 BZR 4153)-testing date = Fri 17 May 2013 10:33:01 PM CEST
 
 BeginCmp
 TimeStamp = /4F76EBA8;
@@ -26,6 +26,13 @@ TimeStamp = /50EDA6CA;
 Reference = D1;
 ValeurCmp = LED;
 IdModule  = MADW__CHIPLED-0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /51969303;
+Reference = DS1;
+ValeurCmp = MBRS140T3G;
+IdModule  = MADW__diode-SMB-package;
 EndCmp
 
 BeginCmp
