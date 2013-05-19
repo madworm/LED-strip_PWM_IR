@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/robert/Electronics/Arduino/KiCAD/Projects/LED-strip_PWM_IR/LED-strip_PWM_IR.sch)
-    (date "Sun 19 May 2013 07:04:41 PM CEST")
+    (date "Sun 19 May 2013 08:08:22 PM CEST")
     (tool "eeschema (2013-05-18 BZR 4155)-testing"))
   (components
     (comp (ref C1)
@@ -31,7 +31,6 @@
       (tstamp 4F6ED250))
     (comp (ref Q1)
       (value 8MHz)
-      (footprint murata-resonators-CSTLA_T)
       (libsource (lib murata-resonators) (part CSTLA_T))
       (sheetpath (names /) (tstamps /))
       (tstamp 4F6EC7D6))
@@ -61,7 +60,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 50B20DF4))
     (comp (ref R3)
-      (value 20k)
+      (value 100k)
       (libsource (lib device) (part R))
       (sheetpath (names /) (tstamps /))
       (tstamp 50B51D62))
@@ -87,7 +86,6 @@
       (tstamp 50EDA6E8))
     (comp (ref IC1)
       (value ATTINY85-S)
-      (footprint SO8-200)
       (libsource (lib atmel) (part ATTINY85-S))
       (sheetpath (names /) (tstamps /))
       (tstamp 5104F51F))
@@ -97,19 +95,6 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 51969303)))
   (libparts
-    (libpart (lib my_parts) (part DIODESCH)
-      (description "Diode schottky")
-      (footprints
-        (fp D?)
-        (fp S*))
-      (fields
-        (field (name Reference) D)
-        (field (name Value) DIODESCH)
-        (field (name Footprint) ~)
-        (field (name Datasheet) ~))
-      (pins
-        (pin (num 1) (name A) (type passive))
-        (pin (num 2) (name C) (type passive))))
     (libpart (lib my_parts) (part CP1)
       (description "Condensateur polarise")
       (footprints
@@ -123,6 +108,19 @@
       (pins
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive))))
+    (libpart (lib my_parts) (part DIODESCH)
+      (description "Diode schottky")
+      (footprints
+        (fp D?)
+        (fp S*))
+      (fields
+        (field (name Reference) D)
+        (field (name Value) DIODESCH)
+        (field (name Footprint) ~)
+        (field (name Datasheet) ~))
+      (pins
+        (pin (num 1) (name A) (type passive))
+        (pin (num 2) (name C) (type passive))))
     (libpart (lib my_parts) (part MADW__AVR_ISP)
       (fields
         (field (name Reference) JP)
@@ -270,10 +268,10 @@
       (uri /usr/share/kicad/library/device.lib))
     (library (logical conn)
       (uri /usr/share/kicad/library/conn.lib))
-    (library (logical atmel)
-      (uri /usr/share/kicad/library/atmel.lib))
     (library (logical murata-resonators)
-      (uri /usr/share/kicad/library/murata-resonators.lib)))
+      (uri /usr/share/kicad/library/murata-resonators.lib))
+    (library (logical atmel)
+      (uri /usr/share/kicad/library/atmel.lib)))
   (nets
     (net (code 1) (name "")
       (node (ref R4) (pin 1))
