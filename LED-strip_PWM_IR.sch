@@ -38,8 +38,8 @@ $Descr User 8268 5906
 encoding utf-8
 Sheet 1 1
 Title "LED-strip_PWM_IR"
-Date "17 may 2013"
-Rev "0.3"
+Date "19 may 2013"
+Rev "0.4"
 Comp "2013 - blog.spitzenpfeil.org"
 Comment1 ""
 Comment2 ""
@@ -668,11 +668,11 @@ Wire Wire Line
 Wire Wire Line
 	4650 3850 4700 3850
 $Comp
-L GND #PWR019
-U 1 1 51969FAA
+L GNDPWR #PWR019
+U 1 1 519903FC
 P 4100 4100
-F 0 "#PWR019" H 4100 4100 30  0001 C CNN
-F 1 "GND" H 4100 4030 30  0001 C CNN
+F 0 "#PWR019" H 4100 4150 40  0001 C CNN
+F 1 "GNDPWR" H 4100 4020 40  0000 C CNN
 F 2 "" H 4100 4100 60  0000 C CNN
 F 3 "" H 4100 4100 60  0000 C CNN
 	1    4100 4100
