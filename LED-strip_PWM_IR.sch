@@ -38,8 +38,8 @@ $Descr User 8268 5906
 encoding utf-8
 Sheet 1 1
 Title "LED-strip_PWM_IR"
-Date "19 may 2013"
-Rev "0.4"
+Date "16 Jun 2013"
+Rev "0.43"
 Comp "2013 - blog.spitzenpfeil.org"
 Comment1 ""
 Comment2 ""
@@ -637,7 +637,7 @@ L DIODESCH DS1
 U 1 1 51969303
 P 5500 3250
 F 0 "DS1" H 5500 3350 40  0000 C CNN
-F 1 "MBRS140T3G" H 5500 3150 40  0000 C CNN
+F 1 "SS14L" H 5500 3150 40  0000 C CNN
 F 2 "~" H 5500 3250 60  0000 C CNN
 F 3 "~" H 5500 3250 60  0000 C CNN
 	1    5500 3250
