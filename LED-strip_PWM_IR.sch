@@ -38,7 +38,7 @@ $Descr User 8268 5906
 encoding utf-8
 Sheet 1 1
 Title "LED-strip_PWM_IR"
-Date "16 Jun 2013"
+Date "29 Sep 2013"
 Rev "0.43"
 Comp "2013 - blog.spitzenpfeil.org"
 Comment1 ""
@@ -283,8 +283,8 @@ $Comp
 L CSTLA_T Q1
 U 1 1 4F6EC7D6
 P 4550 2400
-F 0 "Q1" H 4400 2550 50  0000 L BNN
-F 1 "8MHz" H 4550 2550 50  0000 L BNN
+F 0 "Q1" H 4500 2550 50  0000 L BNN
+F 1 "CSTCE8M00G55-R0" H 4200 2650 50  0000 L BNN
 F 2 "" H 4550 2550 50  0001 C CNN
 F 3 "" H 4550 2400 60  0001 C CNN
 	1    4550 2400
